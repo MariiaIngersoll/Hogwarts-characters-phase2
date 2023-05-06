@@ -1,12 +1,12 @@
 import React from "react";
 
-function CharacterCard() {
+function CharacterCard( { character }) {
     return (
         <li className="card">
             <div className="image">
-                <img />
-                <h2>name</h2>
-                <h3>house?</h3>
+                <img src={character.image}/>
+                <h2>{character.name}</h2>
+                <h3>{character.house}</h3>
 
             </div>
         </li>
