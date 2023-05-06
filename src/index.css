@@ -25,7 +25,24 @@ background-size: cover;
 height: 240px;
 margin-bottom: 50px;
 text-align: center;
+}
 
+.listCharacters {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.container {
+  display: flex;
+  gap: 0.625%;
+}
+a {
+  flex: 1;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  line-height: 3;
+  color: white;
 }
 
