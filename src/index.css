@@ -125,8 +125,11 @@ select {
 }
 
 #headerForHouses {
+  font-size: larger;
   display: table;
   color: bisque;
+  padding-left: 30px;
+  font-family: fantasy;
 }
 
 span {
@@ -143,4 +146,11 @@ span {
   width: 300px;
   display: flex;
   justify-content: center;
+}
+
+p.text {
+    padding-top: 40px;
+    font-size: larger;
+    color: ghostwhite;
+    font-family: fantasy;
 }
