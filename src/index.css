@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: 0;
+  margin: auto;
 
   }
 body {
@@ -36,6 +36,7 @@ text-align: center;
 .container {
   display: flex;
   gap: 0.625%;
+  
 }
 a {
   flex: 1;
@@ -44,5 +45,62 @@ a {
   text-align: center;
   line-height: 3;
   color: white;
+  font-size: x-large;
+  
+}
+a:hover {
+  color: #43454a;
 }
 
+.cards {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1rem;
+  box-shadow: 0 0 7px 0 purple;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+.card .image {
+  height: 225px;
+  position: relative;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.card .image h1, h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.25rem;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-bottom-right-radius: 5px;
+  background: white;
+}
+
+h2 {
+  font-family: cursive;
+}
+
+.card .image img {
+  max-width: 300px;
+  max-height: 225px;
+  width: auto;
+  height: auto;
+}
+
+.card .details {
+  padding: 0.5rem;
+}
+
+.details {
+  font-family: serif;
+  font-size: 1rem;
+
+}
