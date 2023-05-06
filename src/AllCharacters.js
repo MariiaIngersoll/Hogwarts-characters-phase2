@@ -1,10 +1,17 @@
 import React from "react";
+import CharacterCard from "./CharacterCard"
 
-function AllCharacters() {
+function AllCharacters( { characters }) {
+    console.log(characters)
+    const listOfCharacters = characters.map((character) => {
+       return <CharacterCard key={character.id} character={character} />
+    })
     return (
-        <div>
-            <h1>HEEEELOOOO</h1>
-        </div>
+        <main>
+            <ul className="listCharacters">
+                {listOfCharacters}
+            </ul>
+        </main>
     )
 
 
