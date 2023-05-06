@@ -104,3 +104,11 @@ h2 {
   font-size: 1rem;
 
 }
+
+div#selectMenu {
+  text-align: center;
+}
+select {
+  font-family: fantasy;
+  font-size: larger;
+}
