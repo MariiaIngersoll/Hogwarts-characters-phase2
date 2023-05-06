@@ -9,11 +9,10 @@ body {
 }
 #headerH1 {
   position: absolute;
-  right: 100px;
-  top: 150px;
-  color:white;
+  right: 30px;
+  top: 180px;
+  color: white;
   font-family: fantasy;
-  
 }
 
 .header {
@@ -46,6 +45,9 @@ a {
   line-height: 3;
   color: white;
   font-size: x-large;
+  border: 2px solid #020202;
+  border-radius: 20%;
+  background-color: #8d5980;
   
 }
 a:hover {
@@ -82,10 +84,13 @@ a:hover {
   border-bottom: 1px solid #ccc;
   border-bottom-right-radius: 5px;
   background: white;
+  
 }
 
 h2 {
   font-family: cursive;
+  color: antiquewhite;
+  width: fit-content;
 }
 
 .card .image img {
@@ -111,4 +116,31 @@ div#selectMenu {
 select {
   font-family: fantasy;
   font-size: larger;
+}
+
+.housesContainer {
+    display: flex;
+    gap: 6%;
+    
+}
+
+#headerForHouses {
+  display: table;
+  color: bisque;
+}
+
+span {
+  margin: 1rem;
+  box-shadow: 0 0 7px 0 purple;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 400px;
+}
+#imgLogo {
+  height:340px;
+  position: relative;
+  width: 300px;
+  display: flex;
+  justify-content: center;
 }
