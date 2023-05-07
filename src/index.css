@@ -112,6 +112,7 @@ h2 {
 
 div#selectMenu {
   text-align: center;
+  padding-top: 20px;
 }
 select {
   font-family: fantasy;
@@ -153,4 +154,16 @@ p.text {
     font-size: larger;
     color: ghostwhite;
     font-family: fantasy;
+}
+
+button {
+  background-color: #ac4ba0;
+  position: inherit;
+  width: -webkit-fill-available;
+  font-size: unset;
+  border-radius: 20%;
+}
+
+.submitBtn{
+  background-color: #ac4ba0;
 }
