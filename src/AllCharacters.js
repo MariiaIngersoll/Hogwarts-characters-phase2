@@ -3,18 +3,29 @@ import CharacterCard from "./CharacterCard";
 import ChangeForm from "./ChangeForm";
 
 
-function AllCharacters( { characters }) {
+function AllCharacters( {characters, setCharacters }) {
+   
+    const [filterBy, setFilterBy] = useState("");
 
-    const [filterBy, setFilterBy] = useState("none");
-    const filteredCharacters = characters.filter((char) => char.house === filterBy)
-    console.log(filteredCharacters)
+    function handleFilterChange(newChar) {
+        setFilterBy(newChar);
+      }
+    
 
+    function handleDeleteItem(deletedItem) {
+        const updatedItems = characters.filter((item) => item.id !== deletedItem.id);
+        setCharacters(updatedItems);
+      }
+
+    const filteredCharacters = characters.filter((char) => char.house.includes(filterBy))
+    
+   
     const listOfCharacters = filteredCharacters.map((character) => {
-       return <CharacterCard key={character.id} character={character} />
+       return <CharacterCard onDeleteItem={handleDeleteItem} key={character.id} character={character} />
     })
     return (
         <main>
-            <ChangeForm filterCharacter={filteredCharacters} setFilterBy={setFilterBy} filterBy={filterBy} characters={filteredCharacters}/>
+            <ChangeForm onChange={handleFilterChange} filterBy={filterBy} characters={filteredCharacters}/>
             <ul className="listCharacters">
                 {listOfCharacters}
             </ul>
