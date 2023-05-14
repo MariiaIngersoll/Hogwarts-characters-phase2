@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import CharacterCard from "./CharacterCard";
 import ChangeForm from "./ChangeForm";
 
@@ -7,12 +7,12 @@ function AllCharacters( {characters, setCharacters }) {
    
     const [filterBy, setFilterBy] = useState("");
 
-    function handleFilterChange(newChar) {
+    const  handleFilterChange = (newChar) => {
         setFilterBy(newChar);
       }
     
 
-    function handleDeleteItem(deletedItem) {
+    const handleDeleteItem = (deletedItem) => {
         const updatedItems = characters.filter((item) => item.id !== deletedItem.id);
         setCharacters(updatedItems);
       }

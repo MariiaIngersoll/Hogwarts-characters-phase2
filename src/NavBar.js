@@ -1,9 +1,13 @@
+import React from "react"
+import { Link } from "react-router-dom"
 
 function NavBar() {
   return (
-    <div>
-        <h1>This is navBar</h1>
-    </div>
+    <nav className="container">
+        <Link to="/">Hogwarts Houses</Link>
+        <Link to="/characters"> All characters </Link>
+        <Link to="/characters/new">Create New Character</Link>
+    </nav>
   )
 }
 

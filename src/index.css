@@ -179,3 +179,11 @@ button {
   font-size: x-large;
   font-family: fantasy;
 }
+
+.newChar {
+  height: 225px;
+  position: relative;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}

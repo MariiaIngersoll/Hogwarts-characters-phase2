@@ -8,7 +8,7 @@ function CharacterCard( { character, onDeleteItem }) {
         setFavButton(!favButton)
     }
 
-    function handleDeleteClick() {
+    const handleDeleteClick = () => {
         fetch(`http://localhost:4000/characters/${character.id}`, {
             method: "DELETE",
           })
